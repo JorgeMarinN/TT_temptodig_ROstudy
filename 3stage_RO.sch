@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.2 file_version=1.2
 }
 G {}
 K {}
@@ -189,9 +189,10 @@ vvss vss 0 0
 
 .control
    tran 50p 100n
-   run
-   write TT_3stage_RO_v1p1.raw
-   wrdata /foss/designs/sky130_ringosc_tinytapeout/TT_3stage_RO_v1p1.txt v(Vnn1)
+   *run
+   *write TT_3stage_RO_v1p1.raw
+   wrdata /foss/designs/TT_temptodig_ROstudy/TT_3stage_RO_v1p1.txt v(Vnn1)
+   plot v(vnn1)
 .endc
 "}
 C {devices/lab_pin.sym} 560 -810 0 0 {name=p1 sig_type=std_logic lab=V_1}
